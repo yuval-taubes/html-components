@@ -4,6 +4,12 @@
 <title>activity with forms</title>
 </head>
     <body>
+
+        <!-- this form is used to collect shipping information using a variety of
+        different buttons, text and checkboxes -->
+
+        <!-- the form asks for you address, postal code, and city using a text box-->
+
         <form>
             <label for="address">Address 1</label><br>
                 <input type="text" id="address" name="address" placeholder="123 fake street"><br>
@@ -13,16 +19,18 @@
                 <input type="text" id="City" name="City" placeholder="Winnipeg"><br>
         </form>
 
-    <p>Choose Your Shipping</p>
+        <!-- asks to choose which style of shipping you want using a dropdown menu-->
+    <p><b>Choose Your Shipping</b></p>
 
-    <label for="Shipping">Choose Your Shipping:</label>
+        <label for="Shipping">Choose Your Shipping:</label>
 
         <select name="Shipping" id="Shipping">
-            <option value="Standard Shipping">Standard Shipping</option>
-            <option value="One day Shipping">One day Shipping</option>
-            <option value="Two day Shipping">Two day Shipping</option>
+            <option value="Standard Shipping"><b>Standard Shipping</b></option>
+            <option value="One day Shipping"><em> day Shipping</em></option>
+            <option value="Two day Shipping"> <strong>Two day Shipping</strong></option>
         </select>
 
+        <!-- asks you to choose you payment tpye using radio button-->
     <p>Select a payment method</p>
 
         <input type="radio" id="Paypal" name="payment" value="Paypal" checked>
@@ -33,17 +41,19 @@
             <label for="Debit Card">Debit Card</label> <br> <br>
 
 
-
+        <!-- asks for your input using a textara-->
         <label for="comments">Add your comments here!</label> <br>
         <textarea id="comments" name="comments" rows="4" cols="40">
         </textarea> <br> <br>
 
+        <!-- asks if you want email updates and your passsword saved using checkboxes-->
         <input type="checkbox" id="EmailUpdates" name="EmailUpdates" value="EmailUpdates" checked>
             <label for="EmailUpdates"> Sign me up for email updates!</label><br>
 
         <input type="checkbox" id="RememberPassword" name="RememberPassword" value="RememberPassword" checked>
             <label for="RememberPassword"> Remember my Password</label><br> <br> <br>
 
+        <!-- this is the sumbit button-->
         <input type="submit" value="Submit">
 
     </body>
